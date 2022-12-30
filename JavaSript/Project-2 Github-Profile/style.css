@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.con {
+    display: flex;
+    width: 50%;
+    gap: 5px;
+    max-width: 60rem;
+
+}
+
+.con input {
+    padding: 5px 10px;
+    width: 100%;
+}
+.con input:focus-visible{
+    outline: 1px solid orangered;
+}
+button{
+   padding: 5px 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: gray;
+    color: black;
+}
+button:active{
+    background-color: orangered;
+    color: white;
+}
+#profileContainer{
+    width: 100%;
+}
+.profile-box{
+    margin: auto;
+    padding: 40px 20px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    max-width: 70rem;
+    transition: 0.5s ease-in;
+}
+/* Animation */
+.profile-box:hover{
+    transform:rotate(-2deg) scale(1.01);
+    transition: 0.5s ease-in;
+}
+.avatar{
+    height: 100px;
+    width: 100px;
+}
+.avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    font-size: 10px;
+    align-items:center;
+    gap: 20px;
+}
+.top-section button{
+    align-self: center;
+}
+
+.about{
+    margin: 20px;
+}
+.status{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+/* display: flex;
+justify-content: space-between; */
+} 
+.status-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

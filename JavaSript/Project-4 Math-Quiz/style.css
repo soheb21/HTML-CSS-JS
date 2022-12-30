@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+.backimg{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.box{
+    background-color: rgba(210, 240, 248, 0.68);
+    border-width: 0px 2px 1px 0px;
+    box-shadow: 0px 19px 43px rgba(0, 0, 0, 0.38);
+    border-radius: 20px;
+    height: 320px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.box h2{
+    color: rgba(128, 0, 128, 0.916);
+
+}
+#questionForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    padding: 8px 70px;
+    border: 2px solid white;
+    background:transparent;
+    box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+button{
+    padding: 8px 70px;
+    background-color: orangered;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+@media (max-width: 786px){
+    .backimg{
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        height: 220px;
+        width: 300px;  
+    }
+    .box h3{
+        font-size: 15px;
+    }
+    input,button{
+    padding: 4px 35px;
+
+    }
+}

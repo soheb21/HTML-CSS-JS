@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        
+        .navbr{
+            background-color: gray;
+            border-radius: 35px;
+            border: 5px solid rgb(81, 5, 5);
+
+        }
+        .navbr ul{
+           overflow: auto;
+        }
+        .navbr li{
+            float: left;
+            list-style: none;
+            margin: 10px 16px;
+            
+        }
+        .navbr li a{
+            padding: 10px 13px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: cursive;
+            border: 5px solid rgb(81, 5, 5);
+            padding:3px 3px;
+            border-radius: 18px;
+            
+            
+        }
+        .navbr li a:hover{
+            background-color: bisque;
+        }
+        .navbr input{
+            border: 5px solid rgb(81, 5, 5);
+            border-radius: 18px;
+            margin-left: 340px;
+            font-family: cursive;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbr">
+            <ul>
+                <li><a href="https://www.google.com/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

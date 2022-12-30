@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Condition</title>
+</head>
+
+<body>
+    <p>Hey I'm Learning Javasript</p>
+    <script>
+        // let s="This is string";
+        // console.log(s)
+
+        /*let age = 19;
+        if(age<18){
+            console.log("You are children")
+        }
+        else if(age==19){
+            console.log("You are young")
+        }
+        else{
+            console.log("You are old")
+
+        } */
+        /* const cups = 4;
+         switch (cups) {
+             case 4:
+                 console.log("The Value of Cups is 4")
+                 break;
+             case 41:
+                 console.log("The Value of Cups is 41")
+                 break;
+             case 42:
+                 console.log("The Value of Cups is 42")
+                 break;
+             case 43:
+                 console.log("The Value of Cups is 43")
+                 break;
+ 
+             default:
+                 break;
+         } */
+        /* Q1
+         let age=20;
+         if(age>10 && age<20){
+             console.log("Yes It lies between 10 to 20");
+         }
+         else{
+             console.log("baba ji ka Thulu")
+         } 
+         */
+        /*Q-2
+        let num=49;
+        if(num%2==0){
+            console.log("It is Divisible by 2");
+        }
+        else if(num%3==0){
+            console.log("It is Divisilbe by 3");
+        }
+        else{
+            console.log("It is not Divisible by 3 or 4")
+        } */
+
+        //Ternary Operater
+
+        /*Q-3
+        let age=119
+        let a= age>18?"You Can Drive":"You Cannot drive"
+        console.log(a); */
+
+        // ********Loops********
+        //For Loops.
+        /*for(let i=0;i<34;i++){
+            console.log(i)
+        }*/
+        /*
+        let sum=1;
+        let n=5;
+        for(let i=1;i<=5;i++){
+            sum*=i;
+        }
+        console.log("Total Sum is :"+sum); */
+
+        /*let obj = {
+            shoeb: 99,
+            kaif: 10,
+            shantanu: 23,
+            shorab: 55
+        }
+        for (let a in obj) {
+            console.log("Marks of " + a + " are " + obj[a]);
+        }
+        for (let b of "shoeb") {
+            console.log("Marks of " + b);
+        } */
+
+        // let n=prompt("Enter Your Number");
+        //     n=Number.parseInt(n);
+        // let i=0;
+        // while(i<=n){
+        //     console.log(i);
+        //     i++;
+        // }
+        /* let n=prompt("Enter Your Number");
+             n=Number.parseInt(n);
+         let i=0;
+         do{
+             console.log(i);
+             i++;
+         }while(i<=n) */
+        //****Functions****
+
+        /*function avg(x,y){
+            return 1+(x+y)/2;
+        }
+
+        console.log(avg(20,20))
+        console.log(avg(30,30)) */
+
+        //****Practice****
+        let student_marks = {
+            harry: 90,
+            shoeb: 99,
+            kaif: 80,
+            shantanu: 90
+        }
+        /* for(let mrks in student_marks){
+             console.log(student_marks[mrks])
+         } */
+        for (let i = 0; i < Object.keys(student_marks).length;i++) {
+            console.log("The Marks of " + Object.keys(student_marks)[i] + "are" + student_marks[Object.keys(student_marks)[i]]);
+        }
+    </script>
+</body>
+
+</html>

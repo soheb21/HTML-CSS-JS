@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+
+    <div class="backimg">
+        <div class="box">
+            <h2>Score -> <span id="score">0</span></h2>
+            <h3 id="question">Q. What is 8 * 3 ?</h3>
+            <form id="questionForm" onsubmit="checkAns(event)">
+                <input required id="answerInput" type="number" name="answer">
+                <button id="primary-btn" type="submit">Submit</button>
+                <!-- <button id="secondary-btn" type="reset">Reset</button> -->
+            </form>
+        </div>
+    </div>
+
+
+    <!-- javascript -->
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>

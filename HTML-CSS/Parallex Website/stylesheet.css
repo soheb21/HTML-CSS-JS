@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+.pmg1,
+.pmg2,
+.pmg3,
+.pmg4{
+      /* Create the parallax scrolling effect */
+      position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pmg1{
+    background-image:url("parallex img/1.jfif");
+    min-height: 100%;
+
+
+}
+.pmg2{
+  background-image:url("parallex img/2.jfif");
+    min-height: 400px;
+
+}
+.pmg3{
+  background-image:url("parallex img/3.jfif");
+    min-height: 400px;
+
+}
+.pmg4{
+  background-image:url("parallex img/4.jfif");
+    min-height:100%;
+
+
+}
+
+  .textbg{
+ 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.772);
+    padding: 23px 23px;
+    font-size: 2rem;
+    border-radius: 8px;
+    letter-spacing: 8px;
+  }
+  .p1text{
+   position: absolute;
+   top:50%; 
+   text-align: center;
+   width: 100%;
+  }
+  .section1text h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(74, 72, 72);
+  }
+  .section1text{
+    min-height: 180px;
+    padding: 15px 16px;
+  }
+  .section1text p{
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(61, 56, 56);
+    margin-top: 30px;
+  }
+  .section1text2{
+    min-height: 180px;
+    padding: 15px 16px;
+    background-color:rgb(74, 72, 72);
+  }
+  .section1text2 p{
+    text-align: center;
+    letter-spacing: 1px;
+    color:white;
+    margin-top: 30px
+  }
+  .section1text2 h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+  }

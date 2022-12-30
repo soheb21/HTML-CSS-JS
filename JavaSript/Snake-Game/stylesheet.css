@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background: url("/JavaSript/Snake-Game/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+     background: linear-gradient(rgb(102, 181, 102),rgb(106, 106, 70));  /*ye do color ko mix krta hai  */
+     width: 90vmin; /*vmin ka mtlb vh aur vw se jo chota hoga wo lelega*/
+     height: 92vmin;
+     border: 2px solid black;
+     display: grid;
+     grid-template-rows: repeat(18,1fr);
+     grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background-image: url('/JavaSript/Snake-Game/shead.png');
+    background-position: center;
+    background-size: cover;
+    /* border: 2px solid purple; */
+}
+.food{
+    background-image: url('/JavaSript/Snake-Game/food.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(184, 85, 85);
+    border-radius: 12px;
+}
+.snake{
+    background-color: darkgreen;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+#highBoard{
+    position:absolute;
+    top: 60px;
+    right:60px;
+    font-size: 39px;
+    font-weight: bold
+}
+#scoreBoard{
+    position:absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,225 @@
+/* Css reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css varaibles */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Logo and image */
+#logo{
+    margin: 9px -11px;
+}
+#logo img{
+    height: 80px;
+    margin: 19px 53px;
+    border-radius: 18px;
+}
+
+/* list Styling */
+#navbar ul{
+    display: flex;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: -15px 3px;
+    top:0px;
+    
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 216px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background: url("/Project-2/img/bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 50%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+/* utility class */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 2px 2px ;
+    color: black;
+    text-align: center;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family:cursive;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.btn{
+    padding: 2px 2px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor:pointer;
+    border-radius: 13px;
+}
+.btn:hover{
+    background-color: grey;
+    color: black;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 2px 2px ;
+    text-align: center;
+    
+}
+/* services section */
+#ser{
+    margin: 34px;
+    display: flex;
+}
+#ser .box{
+    border: 2px solid red;
+    margin: -17px 5px;
+    padding: 1px -3px;
+    background-color: #eae2e2;
+    border-radius: 23px;
+}
+#ser .box img{
+   height: 150px;
+   display: block;
+   margin: auto;
+}
+#ser .box p{
+    text-align: center;
+    padding: 2px 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* client section */
+#client-section{
+    height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid brown;
+    border-radius: 23px;
+}
+#clients img{
+    height: 115px;
+}
+.client-item{
+    padding: 10px 8px;
+    margin: 15px 4px;
+}
+#client-section::before{
+    content:"";
+    background: url("/Project-2/img/bg.jpg") no-repeat center center/cover;
+    position:absolute;
+    height: 50%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 2px;
+  height: 128px;
+
+}
+.container::before{
+    content:"";
+    background: url("/Project-2/img/bg.jpg") no-repeat center center/cover;
+    position:absolute;
+    height: 145%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+    .formgrp input{
+        padding: 10px 213px;
+        margin: 12px 22px;
+        border: 6px solid brown;
+        border-radius: 23px;
+        font-weight: bold;
+
+    }
+.container h1{
+    font-size: 3rem;
+    margin: 2px 2px;
+    height: -63px;
+}
+.btn1{
+    text-align: center; 
+    background-color: gray;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: cursive;
+    border-radius: 10px;
+    display: block;
+    width: 23%;
+    margin: auto;
+}
+.btn1:hover{
+    background-color: brown;
+}
+
+
+

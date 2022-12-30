@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 102, 255, 0.884);
+    color: black;
+}
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    margin: 0px auto; 
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 40px;
+}
+h3,.joke{
+    font-size: 20px;
+    color: black;
+    font-family: cursive;
+    text-align: center;
+}
+button{
+    width: 100px;
+    margin: 0 auto;
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: white;
+    font-size: 12px;
+    margin-top: 10%;
+    padding: 10px;
+    cursor: pointer;
+}
+

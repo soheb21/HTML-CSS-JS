@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(45, 16, 132);
+        color: white;
+        font-size: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+
+    button {
+        background-color: orange;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+        border: orange;
+    }
+
+    h1 {
+        font-size: 35px;
+        color: aqua;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <p>Don't forget to subscribe my channel</p>
+        <p id="showMyName"></p>
+        <h1 id="heading">Change the content oh h1</h1>
+        <button id="btn">Click me</button>
+        <button id="btn1">Stop</button>
+    </div>
+    <script>
+        // const changeContent = () => {
+        //     // let str="Welcome Shoeb"
+        //     // document.getElementById("heading").innerHTML= str
+        //     const haedingChange=document.getElementById("heading");
+        //     haedingChange.innerHTML="Wlcom Adil"
+        //     console.log(document.getElementsByClassName("para"));
+        //     console.log(document.getElementsByClassName("p"));
+        // }
+
+        const MyName = document.querySelector("#showMyName");
+        const btn = document.querySelector("#btn");
+        const stopInterval = document.querySelector("#btn1");
+        let num = 0;
+        let timeRef;
+        const showMyName = () => {
+            MyName.innerHTML = "Loading..."
+            timeRef= setInterval(() => {
+                MyName.innerHTML = num;
+                num++;
+            }, 1000)
+        }
+        
+        btn.addEventListener('click', showMyName);
+        stopInterval.addEventListener('click',()=>{
+            clearInterval(timeRef);
+        });
+    </script>
+</body>
+
+</html>

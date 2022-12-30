@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Fit</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Css Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+         background: url("1.1.webp"); /*background image use */
+         background-size: 1200px;
+         color: white;
+         
+    }
+    .left{
+        border: 5px solid black;
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;   
+        filter: invert(100%);
+        
+
+    }
+    
+
+   
+ 
+    .mid{
+        border: 5px solid;
+        display: block;
+        width: 40%;
+        margin-left: 330px;
+        margin-top: 28px;
+        background-color: rgba(128, 128, 128, 0.301);
+        border-radius: 35px;
+        
+       
+    }
+
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+
+    }
+    .btn{
+        margin-top: 13px;
+        padding: 5px 6px;
+        font-weight: bold;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: cursive;
+
+    }
+    .btn:hover{
+        background-color: rgb(161, 151, 151);
+    }
+    .navbar{
+        display: inline block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar a{
+        color: white;
+        padding: 5px 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: cursive;
+    }
+    .navbar li a:hover, .navbar li a:active  {
+        text-decoration: underline;
+        background-color: gray;
+        color: black;
+        border-radius: 13px;
+
+    }
+    .container {
+    margin-left: 628px;
+    margin-top: -100px;
+    width: 33%;
+    padding: 181px 75px;
+    border-radius: 2px;
+}
+    .formgrp input{
+        text-align: center;
+        border: 5px solid red;
+        display: block;
+       width: 350px;
+       padding: 13px 15px;
+       margin: 11px auto;
+       border-radius: 10px;
+
+    }
+    .container h1{
+        text-align: center;
+        font-weight: bold;
+        font-family: cursive;
+        border: 2px solid white;
+        background-color: rgba(128, 128, 128, 0.637);
+        border-radius: 15px;
+    }
+    .btn1{
+        text-align: center; 
+        background-color: gray;
+        font-weight: bold;
+        font-size: 25px;
+        cursor: pointer;
+        font-family: cursive;
+        border-radius: 10px;
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+    .btn1:hover{
+        background-color: red;
+    }
+   
+    
+</style>
+<body>
+    <header class="header">
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email</button>
+        </div>
+
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href ="#" class="active">Home</a></li>
+                <li><a href ="#">About us</a></li>
+                <li><a href ="#">Fitness Calculator</a></li>
+                <li><a href ="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- left side for logo -->
+        <div class="left">
+                <img src="logo.png" alt="Logo">
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym</h1>
+        <form action="noaction.php">
+            <div class="formgrp">
+            <input type="text" name="" placeholder="Enter Your Name"> 
+        </div>
+        <div class="formgrp">
+            <input type="text" name="" placeholder="Enter Your Age"> 
+        </div>
+        <div class="formgrp">
+            <input type="text" name="" placeholder="Enter Your Email"> 
+        </div>
+        <div class="formgrp">
+            <input type="password" name="" placeholder="Enter Your password"> 
+        </div>
+        <botton class="btn1">Submit</botton>
+        </form>
+    </div>
+</body>
+</html>

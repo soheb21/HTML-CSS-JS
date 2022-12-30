@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box; /*fix rkhe ga box k size ko */
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgb(0, 255, 136);
+        }
+        .container{
+            background-color:rgba(197, 125, 70, 0.897);
+            border: 3px solid rgb(167, 103, 209);
+            /* padding: 9px;
+            padding-left: 34px; */
+            margin-top: 35px;
+            margin-bottom:4px;
+            margin-left: 20px;
+            margin-right: 20px;
+             padding: 20px 5px 15px 10px;/*padding/margin:top right bottom left (shortcut) */
+             border-radius: 24px;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>This Tutorial help me to know what is Box Model in CSS</h2>
+    <p id="firstid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum consequatur vel inventore. Qui omnis dolorem, adipisci sint culpa cumque explicabo temporibus 
+        consequuntur aperiam dicta recusandae quia ex ad quam.</p>
+    </div>
+
+    <div class="container">
+        <h2>This Tutorial help me to know what ia Box Model in CSS</h2>
+        <p id="secid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum consequatur vel inventore. Qui omnis dolorem, adipisci sint culpa cumque explicabo temporibus 
+            consequuntur aperiam dicta recusandae quia ex ad quam.</p>
+        </div>
+                <div class="container">
+                    <h2>This Tutorial help me to know what ia Box Model in CSS</h2>
+                    <p id="thirid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum consequatur vel inventore. Qui omnis dolorem, adipisci sint culpa cumque explicabo temporibus 
+                        consequuntur aperiam dicta recusandae quia ex ad quam.</p>
+                    </div>
+</body>
+</html>

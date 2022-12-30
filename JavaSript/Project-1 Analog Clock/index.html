@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa05cdcb40.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aa05cdcb40.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <div class="background">
+            <div id="initialtext" class="container">
+                <h1>Enter Your Birth Date</h1>
+            </div> 
+            <div id="afterDob" class="container">
+               <div class="centre">
+                <h1>How Much Life Journey,Till Cover</h1>
+                <div class="time-container">
+                    <h2><div id="year">0</div>Year</h2>
+                    <h2><div id="month">0</div>Month</h2>
+                    <h2><div id="day">0</div>Day</h2>
+                    <h2><div id="hour">0</div>Hour</h2>
+                    <h2><div id="min">0</div>Min</h2>
+                    <h2><div id="sec">0</div>Sec</h2>
+                </div>
+               </div>
+            </div> 
+            <div class="setting">
+                <i id="settingIcon" class="fa fa-cog"></i>
+                <div id="settingContent" class="setting-content hide " >
+                    <input type="date" id="dobInput">
+                    <button id="dobButton">Add DOB</button>
+                </div>
+            </div> 
+        </div>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

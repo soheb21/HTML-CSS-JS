@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotopiX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Photo<span>pi</span>X</h1>
+            <div class="navbar">
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+            <div class="sear">
+                <i class="fa fa-search"></i>
+                <button>Login</button>
+            </div>
+        </div>
+        <section class="h-text">
+            <i class="fa fa-camera" id="camera"></i>
+            <h1> Capturing the moments that captivate your heart</h1>
+            <input type="text" name="" placeholder="Search here...">
+            <button><i class="fa fa-search"></i> </button>
+        </section>
+    </header>
+    <section class="filter-gallery">
+        <div class="porfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".nature">Nature</li>
+                <li data-filter=".fashion">Fashion</li>
+                <li data-filter=".wedding">Wedding</li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio-item">
+        <div class="item nature">
+            <img src="/Photo Website/photopix/p1.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item fashion">
+            <img src="/Photo Website/photopix/p2.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item wedding">
+            <img src="/Photo Website/photopix/p3.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item nature">
+            <img src="/Photo Website/photopix/p4.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item fashion">
+            <img src="/Photo Website/photopix/p5.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item wedding">
+            <img src="/Photo Website/photopix/p6.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item nature">
+            <img src="/Photo Website/photopix/p7.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item fashion">
+            <img src="/Photo Website/photopix/p8.jpg" width="300" height="300" alt="1">
+        </div>
+        <div class="item wedding">
+            <img src="/Photo Website/photopix/p9.jpg" width="300" height="300" alt="1">
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        $('.portfolio-item').isotope({
+            // options
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+        $('porfolio-menu ul li').click(function(){
+        $('porfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        var selector =$(this).attr('data-filter');
+        $('portfolio-item').isotope({
+            filter:selector
+        });
+        return false;
+        });
+
+    </script>
+
+</body>
+
+</html>
